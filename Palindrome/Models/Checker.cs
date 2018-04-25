@@ -18,7 +18,6 @@ namespace Palindrome.Models
       }
       public bool ValidatePalindrome()
       {
-      string _instance = "";
       string original_instance = _instance.ToLower().Replace(" ","").Replace(",","").Replace("'","").Replace(".","").Replace("!","").Replace("?","").Replace("-","").Replace(")","").Replace("(","");; // original string
       char[] reverse_instance = _instance.ToLower().Replace(" ","").Replace(",","").Replace("'","").Replace(".","").Replace("!","").Replace("?","").Replace("-","").Replace(")","").Replace("(","").ToArray(); // convert to char array
       Array.Reverse(reverse_instance); // reverse the array

@@ -13,5 +13,11 @@ namespace PalindromeController
     {
       return View("Index");
     }
+    [HttpPost("/result")]
+    public ActionResult Result()
+    {
+      WordCheck newCheck = new WordCheck(Request.Form["palindrome"]);
+      return View("result", newCheck);
+    }
   }
 }
